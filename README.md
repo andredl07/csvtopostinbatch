@@ -23,3 +23,15 @@ Esta aplicação Node.js lê um arquivo CSV linha por linha, transforma os dados
 3. Instale as dependências necessárias executando o comando:
    ```bash
    npm install
+
+ #  Executando a Aplicação
+1 - Inicie o servidor local executando:
+
+node index.js
+
+2 - No navegador, ou usando uma ferramenta como curl ou Postman, faça uma requisição GET para o endpoint /process-csv com o diretório do arquivo CSV especificado na query string:
+
+http://localhost:3000/process-csv?directory=/caminho/para/diretorio
+
+directory: O caminho absoluto para o diretório onde o arquivo input.csv está localizado.
+
